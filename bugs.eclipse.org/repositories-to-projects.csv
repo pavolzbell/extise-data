@@ -1,0 +1,51 @@
+PDE,API Tools,pde,eclipse.pde.ui
+PDE,Build,pde,eclipse.pde.build
+PDE,UI,pde,eclipse.pde.ui
+Mylyn,Bugzilla,mylyn,org.eclipse.mylyn.context
+Mylyn,Bugzilla,mylyn,org.eclipse.mylyn.tasks
+Mylyn,Core,mylyn,org.eclipse.mylyn.builds
+Mylyn,Core,mylyn,org.eclipse.mylyn.commons
+Mylyn,Core,mylyn,org.eclipse.mylyn.context
+Mylyn,Core,mylyn,org.eclipse.mylyn.tasks
+Mylyn,Core,mylyn,org.eclipse.mylyn.versions
+Mylyn,Doc,mylyn,org.eclipse.mylyn.docs
+Mylyn,Java,mylyn,org.eclipse.mylyn.context
+Mylyn,Monitor,mylyn,org.eclipse.mylyn.commons
+Mylyn,Releng,mylyn,org.eclipse.mylyn.builds
+Mylyn,Releng,mylyn,org.eclipse.mylyn.tasks
+Mylyn,Tasks,mylyn,org.eclipse.mylyn.tasks
+Mylyn,Trac,mylyn,org.eclipse.mylyn.tasks
+Mylyn,UI,mylyn,org.eclipse.mylyn.builds
+Mylyn,UI,mylyn,org.eclipse.mylyn.commons
+Mylyn,UI,mylyn,org.eclipse.mylyn.context
+Mylyn,UI,mylyn,org.eclipse.mylyn.reviews
+Mylyn,UI,mylyn,org.eclipse.mylyn.tasks
+Mylyn,UI,mylyn,org.eclipse.mylyn.versions
+Mylyn Docs,Wikitext,mylyn,org.eclipse.mylyn.docs
+Mylyn Tasks,Framework,mylyn,org.eclipse.mylyn.tasks
+Mylyn Tasks,Bugzilla,mylyn,org.eclipse.mylyn.context
+Mylyn Tasks,Bugzilla,mylyn,org.eclipse.mylyn.tasks
+Platform,Ant,platform,eclipse.platform
+Platform,Compare,platform,eclipse.platform.text
+Platform,Compare,platform,eclipse.platform.ui
+Platform,CVS,platform,eclipse.platform.team
+Platform,Debug,platform,eclipse.platform.debug
+Platform,Doc,platform,eclipse.platform.common
+Platform,IDE,platform,eclipse.platform.ui
+Platform,Releng,platform,eclipse.platform.releng
+Platform,Releng,platform,eclipse.platform.releng.aggregator
+Platform,Releng,platform,eclipse.platform.releng.buildtools
+Platform,Releng,platform,eclipse.platform.releng.eclipsebuilder
+Platform,Resources,platform,eclipse.platform.resources
+Platform,Runtime,platform,eclipse.platform.runtime
+Platform,SWT,platform,eclipse.platform.swt
+Platform,SWT,platform,eclipse.platform.swt.binaries
+Platform,Team,platform,eclipse.platform.team
+Platform,Text,platform,eclipse.platform.text
+Platform,UI,platform,eclipse.platform.debug
+Platform,UI,platform,eclipse.platform.team
+Platform,UI,platform,eclipse.platform.text
+Platform,UI,platform,eclipse.platform.ua
+Platform,UI,platform,eclipse.platform.ui
+Platform,UI,platform,eclipse.platform.ui.tools
+Platform,User Assistance,platform,eclipse.platform.ua
