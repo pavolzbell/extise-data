@@ -1,0 +1,17 @@
+.bundle
+.idea
+.launches
+.metadata
+.settings
+.sources
+.tags
+
+.~lock.*
+*.auto*
+*.*~
+
+/bugs.eclipse.org/bugzilla-bugs*
+/bugs.eclipse.org/mylyn-contexts*
+
+/git.eclipse.org/gerrit-changes*
+/git.eclipse.org/repositories*

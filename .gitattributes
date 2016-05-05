@@ -1,0 +1,9 @@
+* text eol=lf
+
+*.bat text eol=crlf
+
+*.jar binary
+*.tgz binary
+*.zip binary
+
+*/database-exports/* linguist-vendored
