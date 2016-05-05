@@ -1,0 +1,11 @@
+measure target: :session,
+
+metrics: %i(
+  change_iterations
+  change_uploads
+),
+
+normalizations: %i(
+  rescale
+  tanh
+)

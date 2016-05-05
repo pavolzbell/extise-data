@@ -1,0 +1,13 @@
+measure target: :session,
+
+metrics: %i(
+  lines_of_code
+  comment_lines_of_code
+  logical_lines_of_code
+  source_lines_of_code
+),
+
+normalizations: %i(
+  rescale
+  tanh
+)

@@ -1,0 +1,10 @@
+measure target: :session,
+
+metrics: %i(
+  duration
+),
+
+normalizations: %i(
+  rescale
+  tanh
+)

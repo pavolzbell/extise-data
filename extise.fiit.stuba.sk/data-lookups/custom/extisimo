@@ -1,0 +1,37 @@
+run 'dbstat', 'extisimo'
+
+histogram Extisimo::Project, :product
+histogram Extisimo::Project, :component
+
+histogram Extisimo::Task, :classification
+
+histogram 'Extisimo::Task.joins(:project).pluck :classification, :product'
+histogram 'Extisimo::Task.joins(:project).pluck :classification, :component'
+
+histogram 'Extisimo::Task.joins(:project).pluck :product'
+histogram 'Extisimo::Task.joins(:project).pluck :product, :component'
+
+histogram 'Extisimo::Task.joins(:project).pluck :component'
+
+histogram Extisimo::Task, :status
+histogram Extisimo::Task, :status, :resolution
+
+histogram Extisimo::Task, :resolution
+
+histogram Extisimo::Task, :priority
+histogram Extisimo::Task, :priority, :severity
+
+histogram Extisimo::Task, :severity
+
+histogram Extisimo::Task, :platform
+histogram Extisimo::Task, :platform, :operating_system
+
+histogram Extisimo::Task, :operating_system
+
+histogram Extisimo::Interaction, :origin
+histogram Extisimo::Interaction, :origin, :kind
+
+histogram Extisimo::Interaction, :kind
+histogram Extisimo::Interaction, :kind, :type
+
+histogram Extisimo::Interaction, :type

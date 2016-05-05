@@ -1,0 +1,10 @@
+measure target: :project,
+
+metrics: %i(
+  commits
+),
+
+normalizations: %i(
+  rescale
+  tanh
+)

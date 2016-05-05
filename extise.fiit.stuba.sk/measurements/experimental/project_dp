@@ -1,0 +1,14 @@
+measure target: :project,
+
+metrics: %i(
+  dp_cc_c
+
+  dp_locdc_c
+),
+
+normalizations: %i(
+  rescale
+  sigmoid
+  tanh
+  z-score
+)

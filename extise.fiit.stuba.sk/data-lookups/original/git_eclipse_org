@@ -1,0 +1,13 @@
+run 'dbstat', 'git_eclipse_org'
+
+histogram GitEclipseOrg::Project, :parent
+
+histogram GitEclipseOrg::Change, :project_name
+histogram GitEclipseOrg::Change, :branch_name
+
+histogram GitEclipseOrg::Change, :status
+
+histogram GitEclipseOrg::Label, :approved
+histogram GitEclipseOrg::Label, :approved, :value
+
+histogram GitEclipseOrg::Label, :value

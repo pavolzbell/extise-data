@@ -1,0 +1,35 @@
+run 'dbstat', 'bugs_eclipse_org'
+
+histogram BugsEclipseOrg::Bug, :classification
+histogram BugsEclipseOrg::Bug, :classification, :product
+histogram BugsEclipseOrg::Bug, :classification, :component
+
+histogram BugsEclipseOrg::Bug, :product
+histogram BugsEclipseOrg::Bug, :product, :component
+
+histogram BugsEclipseOrg::Bug, :component
+
+histogram BugsEclipseOrg::Bug, :everconfirmed
+
+histogram BugsEclipseOrg::Bug, :bug_status
+histogram BugsEclipseOrg::Bug, :bug_status, :resolution
+
+histogram BugsEclipseOrg::Bug, :resolution
+
+histogram BugsEclipseOrg::Bug, :priority
+histogram BugsEclipseOrg::Bug, :priority, :bug_severity
+
+histogram BugsEclipseOrg::Bug, :bug_severity
+
+histogram BugsEclipseOrg::Bug, :rep_platform
+histogram BugsEclipseOrg::Bug, :rep_platform, :op_sys
+
+histogram BugsEclipseOrg::Bug, :op_sys
+
+histogram BugsEclipseOrg::Interaction, :originid
+histogram BugsEclipseOrg::Interaction, :originid, :kind
+
+histogram BugsEclipseOrg::Interaction, :kind
+histogram BugsEclipseOrg::Interaction, :kind, :structure_kind
+
+histogram BugsEclipseOrg::Interaction, :structure_kind

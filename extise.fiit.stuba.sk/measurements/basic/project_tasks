@@ -1,0 +1,11 @@
+measure target: :project,
+
+metrics: %i(
+  assigned_tasks
+  reviewed_changes
+),
+
+normalizations: %i(
+  rescale
+  tanh
+)

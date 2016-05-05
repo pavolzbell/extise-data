@@ -1,0 +1,16 @@
+measure target: :session,
+
+metrics: %i(
+  dp_cc_c
+  dp_cc_t
+
+  dp_locdc_c
+  dp_locdc_t
+),
+
+normalizations: %i(
+  rescale
+  sigmoid
+  tanh
+  z-score
+)

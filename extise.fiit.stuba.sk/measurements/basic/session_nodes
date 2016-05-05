@@ -1,0 +1,15 @@
+measure target: :session,
+
+metrics: %i(
+  cyclomatic_complexity
+
+  comment_count
+  method_count
+  statement_count
+  type_count
+),
+
+normalizations: %i(
+  rescale
+  tanh
+)
