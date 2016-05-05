@@ -32,6 +32,6 @@ histogram Extisimo::Interaction, :origin
 histogram Extisimo::Interaction, :origin, :kind
 
 histogram Extisimo::Interaction, :kind
-histogram Extisimo::Interaction, :kind, :type
+histogram Extisimo::Interaction, :kind, :resource
 
-histogram Extisimo::Interaction, :type
+histogram Extisimo::Interaction, :resource
