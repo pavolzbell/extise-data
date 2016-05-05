@@ -13,5 +13,7 @@
 /bugs.eclipse.org/bugzilla-bugs*
 /bugs.eclipse.org/mylyn-contexts*
 
+/extise.fiit.stuba.sk/database-exports*
+
 /git.eclipse.org/gerrit-changes*
 /git.eclipse.org/repositories*
