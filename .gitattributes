@@ -6,4 +6,8 @@
 *.tgz binary
 *.zip binary
 
+*/data-lookups/* linguist-language=Ruby
+*/evaluations/* linguist-language=Ruby
+*/measurements/* linguist-language=Ruby
+
 */database-exports/* linguist-vendored
