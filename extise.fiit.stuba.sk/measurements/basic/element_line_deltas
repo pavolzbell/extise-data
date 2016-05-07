@@ -1,0 +1,11 @@
+measure target: :element,
+
+metrics: %i(
+  lines_of_code_delta
+  lines_of_code_delta_combination
+),
+
+normalizations: %i(
+  rescale
+  tanh
+)

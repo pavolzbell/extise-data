@@ -1,0 +1,14 @@
+measure target: :element,
+
+metrics: %i(
+  default_lines_of_code
+  recent_lines_of_code
+
+  relative_default_lines_of_code
+  relative_recent_lines_of_code
+),
+
+normalizations: %i(
+  rescale
+  tanh
+)
