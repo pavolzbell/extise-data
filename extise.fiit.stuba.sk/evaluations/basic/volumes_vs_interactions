@@ -9,9 +9,9 @@ correlate :session,
   type_count
 
   default_lines_of_code
-  recent_lines_of_code
-
   relative_default_lines_of_code
+
+  recent_lines_of_code
   relative_recent_lines_of_code
 
   lines_of_code_delta
@@ -41,4 +41,6 @@ correlate :session,
   extent_of_selections
 ),
 
-method: :spearman
+method: :spearman,
+
+normalization: :tanh

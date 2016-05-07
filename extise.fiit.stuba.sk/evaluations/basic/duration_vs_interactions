@@ -22,4 +22,6 @@ correlate :session,
   extent_of_selections
 ),
 
-method: :spearman
+method: :spearman,
+
+normalization: :tanh
