@@ -2,6 +2,12 @@ measure target: :session,
 
 metrics: %i(
   duration
+
+  change_iterations
+  change_uploads
+
+  task_priority
+  task_severity
 ),
 
 normalizations: %i(
