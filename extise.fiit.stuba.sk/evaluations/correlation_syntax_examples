@@ -1,0 +1,78 @@
+# basic usage
+
+correlate :session, :duration, :edits
+
+correlate :session, :duration, :edits, method: :pearson
+correlate :session, :duration, :edits, method: :pearson, normalization: :tanh
+
+correlate :session, :duration, :edits, methods: %i(pearson spearman)
+correlate :session, :duration, :edits, methods: %i(pearson spearman), normalizations: %i(rescale tanh)
+
+# basic scoping
+
+correlate :session, :duration, :edits, global: :overall
+correlate :session, :duration, :edits, global: :per_user
+correlate :session, :duration, :edits, projects_by_classification: 'Mylyn'
+correlate :session, :duration, :edits, projects_by_product: 'PDE'
+
+p = Extisimo::Project.where(product: 'PDE').ids
+u = Extisimo::User.joins(:sessions).first.id
+
+correlate :session, :duration, :edits, project: p
+correlate :session, :duration, :edits, user: u
+correlate :session, :duration, :edits, user: u, subjects_by_project: p
+
+# complex scoping
+
+correlate :session, :duration, :edits, scope: {
+  global: 'overall'
+}
+
+correlate :session, :duration, :edits, scopes: {
+  projects_by_product: 'PDE'
+}
+
+correlate :session, :duration, :edits, scopes: [
+  { global: 'overall' },
+  { global: 'per-user' },
+  { projects_by_classification: 'Mylyn' },
+  { projects_by_product: 'PDE' },
+  { projects_by_product: 'Platform' }
+]
+
+# complex example
+
+correlate :session,
+
+%i(
+  duration
+
+  task_priority
+  task_severity
+),
+
+%i(
+  edits
+  selections
+
+  unique_edits
+  unique_selections
+),
+
+methods: %i(
+  pearson
+  spearman
+),
+
+normalizations: %i(
+  rescale
+  tanh
+),
+
+scopes: [
+  { global: 'overall' },
+  { global: 'per-user' },
+  { projects_by_classification: 'Mylyn' },
+  { projects_by_product: 'PDE' },
+  { projects_by_product: 'Platform' }
+]
