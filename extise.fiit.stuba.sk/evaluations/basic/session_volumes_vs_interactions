@@ -3,10 +3,8 @@ correlate :session,
 %i(
   cyclomatic_complexity
 
-  comment_count
-  method_count
-  statement_count
-  type_count
+  lines_of_code_delta
+  lines_of_code_delta_combination
 
   default_lines_of_code
   relative_default_lines_of_code
@@ -14,13 +12,15 @@ correlate :session,
   recent_lines_of_code
   relative_recent_lines_of_code
 
-  lines_of_code_delta
-  lines_of_code_delta_combination
-
   lines_of_code
   comment_lines_of_code
   logical_lines_of_code
   source_lines_of_code
+
+  comment_count
+  method_count
+  statement_count
+  type_count
 ),
 
 %i(

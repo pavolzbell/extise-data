@@ -1,0 +1,17 @@
+correlate :session,
+
+%i(
+  duration
+),
+
+%i(
+  dp_cc_c
+  dp_cc_t
+
+  dp_locdc_c
+  dp_locdc_t
+),
+
+method: :spearman,
+
+normalization: :tanh

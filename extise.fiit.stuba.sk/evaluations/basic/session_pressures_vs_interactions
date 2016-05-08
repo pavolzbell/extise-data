@@ -1,0 +1,31 @@
+correlate :session,
+
+%i(
+  change_iterations
+  change_uploads
+
+  task_priority
+  task_severity
+),
+
+%i(
+  interactions
+  edits
+  selections
+
+  unique_interactions
+  unique_edits
+  unique_selections
+
+  subsequent_interactions
+  subsequent_edits
+  subsequent_selections
+
+  extent_of_interactions
+  extent_of_edits
+  extent_of_selections
+),
+
+method: :spearman,
+
+normalization: :tanh

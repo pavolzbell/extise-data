@@ -1,0 +1,18 @@
+correlate :session,
+
+%i(
+  default_lines_of_code
+  relative_default_lines_of_code
+),
+
+%i(
+  dp_cc_c
+  dp_cc_t
+
+  dp_locdc_c
+  dp_locdc_t
+),
+
+method: :spearman,
+
+normalization: :tanh

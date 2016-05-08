@@ -1,14 +1,6 @@
 correlate :session,
 
 %i(
-  change_iterations
-  change_uploads
-
-  task_priority
-  task_severity
-),
-
-%i(
   cyclomatic_complexity
 
   lines_of_code_delta
@@ -30,6 +22,8 @@ correlate :session,
   statement_count
   type_count
 ),
+
+:with_each_other,
 
 method: :spearman,
 

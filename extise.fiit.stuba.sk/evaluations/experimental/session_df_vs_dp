@@ -1,0 +1,31 @@
+correlate :session,
+
+%i(
+  df_dloc
+  df_dloc_dr
+  df_dloc_ms
+
+  df_rdloc
+  df_rdloc_dr
+  df_rdloc_ms
+
+  df_rloc
+  df_rloc_dr
+  df_rloc_ms
+
+  df_rrloc
+  df_rrloc_dr
+  df_rrloc_ms
+),
+
+%i(
+  dp_cc_c
+  dp_cc_t
+
+  dp_locdc_c
+  dp_locdc_t
+),
+
+method: :spearman,
+
+normalization: :tanh

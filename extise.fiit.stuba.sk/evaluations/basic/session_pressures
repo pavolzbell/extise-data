@@ -1,0 +1,15 @@
+correlate :session,
+
+%i(
+  change_iterations
+  change_uploads
+
+  task_priority
+  task_severity
+),
+
+:with_each_other,
+
+method: :spearman,
+
+normalization: :tanh

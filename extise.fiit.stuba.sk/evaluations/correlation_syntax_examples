@@ -8,6 +8,8 @@ correlate :session, :duration, :edits, method: :pearson, normalization: :tanh
 correlate :session, :duration, :edits, methods: %i(pearson spearman)
 correlate :session, :duration, :edits, methods: %i(pearson spearman), normalizations: %i(rescale tanh)
 
+correlate :session, %i(duration edits selections), :with_each_other
+
 # basic scoping
 
 correlate :session, :duration, :edits, global: :overall
@@ -40,7 +42,7 @@ correlate :session, :duration, :edits, scopes: [
   { projects_by_product: 'Platform' }
 ]
 
-# complex example
+# complex usage
 
 correlate :session,
 
