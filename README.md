@@ -1,6 +1,6 @@
 # Extise Data
 
-A collection of batches and data pertaining to [Extise](https://github.com/pavolzbell/extise)
+A collection of batches and data pertaining to [Extise](https://github.com/perconik/extise)
 
 ## Requirements
 
