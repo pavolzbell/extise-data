@@ -2,9 +2,9 @@
 
 *.bat text eol=crlf
 
-*.jar binary
-*.tgz binary
-*.zip binary
+*.jar diff=lfs filter=lfs merge=lfs -text
+*.tgz diff=lfs filter=lfs merge=lfs -text
+*.zip diff=lfs filter=lfs merge=lfs -text
 
 */data-lookups/* linguist-language=Ruby
 */evaluations/* linguist-language=Ruby
