@@ -10,10 +10,10 @@
 *.auto*
 *.*~
 
-/bugs.eclipse.org/bugzilla-bugs*
-/bugs.eclipse.org/mylyn-contexts*
+/bugs.eclipse.org/bugzilla-bugs-20160110-1824
+/bugs.eclipse.org/mylyn-contexts-20160110-1829
 
-/extise.fiit.stuba.sk/database-exports*
+/extise.fiit.stuba.sk/database-exports/*.sql
 
-/git.eclipse.org/gerrit-changes*
+/git.eclipse.org/gerrit-changes-20160411-1826
 /git.eclipse.org/repositories*
