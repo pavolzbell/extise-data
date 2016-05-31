@@ -4,7 +4,7 @@ A collection of batches and data pertaining to [Extise](https://github.com/perco
 
 ## Requirements
 
-- PostgreSQL 9.5.1
+- PostgreSQL 9.5
 
 ## Structure
 
